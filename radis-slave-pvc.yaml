@@ -36,8 +36,8 @@ spec:
         - containerPort: 6379
           name: redis-slave
           volumeMounts:
-            - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql
+            - name: redis-slave-persistent-storage
+              mountPath: /var/lib/redis-slave
         volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
