@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: guestbook-volumeclaim
+  name: radis-slave-volumeclaim
 spec:
   accessModes:
     - ReadWriteOnce
